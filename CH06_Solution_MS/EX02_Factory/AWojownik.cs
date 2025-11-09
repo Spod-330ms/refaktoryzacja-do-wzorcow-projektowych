@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace RefactoringToDesignPatterns.CH06_Solution_MS.EX02_Factory
 {
-    public abstract class Wojownik
+    public abstract class AWojownik
     {
         internal string Name { get; }
-        public Wojownik(string name)
+        public AWojownik(string name)
         {
             Name = name;
         }

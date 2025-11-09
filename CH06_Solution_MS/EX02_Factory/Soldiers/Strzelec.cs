@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RefactoringToDesignPatterns.CH06_Solution_MS.EX02_Factory.Soldiers
 {
-    internal class Strzelec : Wojownik
+    internal class Strzelec : AWojownik
     {
         public Strzelec(string name) : base(name)
         {
