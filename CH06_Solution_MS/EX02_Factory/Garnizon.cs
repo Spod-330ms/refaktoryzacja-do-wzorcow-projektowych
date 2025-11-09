@@ -7,21 +7,21 @@ using RefactoringToDesignPatterns.CH06_Solution_MS.EX02_Factory.Soldiers;
 
 namespace RefactoringToDesignPatterns.CH06_Solution_MS.EX02_Factory
 {
-    public class Garnizon
+    public static class Garnizon
     {
-        public Wojownik CreateSoldier(string type, string name)
+        public static AWojownik CreateSoldier(TypWojownika type, string name)
         {
-            switch (type.ToLower())
+            switch(type)
             {
-                case "piechur":
+                case TypWojownika.Piechur:
                     {
                         return new Piechur(name);
                     }
-                case "strzelec":
+                case TypWojownika.Strzelec:
                     {
                         return new Strzelec(name);
                     }
-                case "konny":
+                case TypWojownika.Konny:
                     {
                         return new Konny(name);
                     }
